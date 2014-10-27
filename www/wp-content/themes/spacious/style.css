@@ -1518,10 +1518,13 @@ li.default-menu {
    padding: 1px 1px 1px 2px;
 }
 
+
+
 /* =FOOTER WIDGET AREA 
 ----------------------------------------------- */
 .footer-widgets-wrapper {
-	background-color: #333333;
+	/*background-color: #333333;*/
+    background: url("img/bg-footer.png") #333 no-repeat 0 0;
 	border-top: 1px solid #EAEAEA;
 }
 .footer-widgets-area {
@@ -1555,6 +1558,18 @@ li.default-menu {
 #colophon, #colophon p {
 	font-size: 14px;
 	line-height: 18px;
+}
+
+
+/* =FOOTER GMAPS
+----------------------------------------------- */
+.footer-perso-info .widget-title,
+.footer-perso-info p{
+    text-align: left;
+}
+.footer-perso-maps{
+    float: right;
+    width: 60%;
 }
 
 /* =FOOTER SOCKET AREA 
