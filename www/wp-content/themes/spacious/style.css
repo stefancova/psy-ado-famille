@@ -516,7 +516,8 @@ body {
 }
 #header-logo-image img {
 	margin-bottom: 0px;
-}
+	width: 100px;
+} 
 #header-text {
 	float: left;
 	padding: 10px 20px 0 0;
