@@ -29,7 +29,7 @@
 						</div>
 						<div class="footer-perso-maps">
 					        <iframe class="" width="100%" height="200" frameborder="0" style="border:0"
-								src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBiF1h5ZyQZUj4ECHCbzHa3A3n1V-ny8eA&q=29+rue+de+Belleville,75019+Paris">
+								src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCAmWyHVSHb0Oldx0F-ToMX77MbYCOQXGs&q=29+rue+de+Belleville,75019+Paris">
 							</iframe>
 						</div>
 					</div>
