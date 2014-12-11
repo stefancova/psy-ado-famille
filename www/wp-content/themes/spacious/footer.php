@@ -25,8 +25,8 @@
 							</h3>
 							<p>Cécile Martin, Psychologue Clinicienne</p>
 							<p>46 rue Trousseau - 75011, Paris</p>
-							<p>Tél : 06 99 42 78 53</p>
-							<p>Mail : contact@psy-ado-famille.fr</p>
+							<p>Tél : <a href="tel:+33699427853">06 99 42 78 53</a></p>
+							<p>Mail : <a href="mailto:contact@psy-ado-famille.fr">contact@psy-ado-famille.fr</a></p>
 						</div>
 						<div class="footer-perso-maps">
 					        <iframe class="" width="100%" height="200" frameborder="0" style="border:0"
