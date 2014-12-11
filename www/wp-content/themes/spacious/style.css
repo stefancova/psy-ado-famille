@@ -1577,9 +1577,11 @@ li.default-menu {
     float: left;
     width: 30%;
 }
-.footer-perso-info .widget-title,
+.footer-perso-info .widget-title{
+    margin: 0 0 1.5em;
+}
 .footer-perso-info p{
-    text-align: left;
+    margin-bottom: 0.7em;
 }
 .footer-perso-maps{
     float: right;
