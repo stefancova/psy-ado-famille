@@ -19,12 +19,14 @@
 			}
 		?>
 
-		<div id="menu-perso">
+		<div class="menu-perso">
 			<?php
+				# source : http://lashon.fr/menus-dynamiques-wordpress-site-web-blog-pages-categories/
 				$children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
+
 				if ($children) {
 					$parent_title = get_the_title($post->post_parent);
-					echo '<p class="parent-page">'.$parent_title.'<p>';
+					echo '<p class="menu-perso-title">'.$parent_title.'</p>';
 				?>
 				<ul>
 					<?php echo $children; ?>
@@ -32,28 +34,14 @@
 			<?php } ?>
 		</div><!-- fin menu-perso -->
 
-		<?php if ( ! dynamic_sidebar( $sidebar ) ) : ?>
-
-		<aside id="search" class="widget widget_search">
-			<?php get_search_form(); ?>
-		</aside>
-
-		<aside id="archives" class="widget">
-			<h1 class="widget-title"><?php _e( 'Archives', 'spacious' ); ?></h1>
+		<div class="menu-perso">
+			<p class="menu-perso-title">Accès rapide</p>
 			<ul>
-				<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
+				<li><a href="">Blabla</a></li>
+				<li><a href="">Blibli</a></li>
 			</ul>
-		</aside>
+		</div>
 
-		<aside id="meta" class="widget">
-			<h1 class="widget-title"><?php _e( 'Meta', 'spacious' ); ?></h1>
-			<ul>
-				<?php wp_register(); ?>
-				<li><?php wp_loginout(); ?></li>
-				<?php wp_meta(); ?>
-			</ul>
-		</aside>
 
-	<?php endif; ?>
 	<?php do_action( 'spacious_after_sidebar' ); ?>
 </div>
