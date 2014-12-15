@@ -378,7 +378,9 @@ img {
 .entry-content img, .comment-content img, .widget img {
 	max-width: 100%; /* Fluid images for posts, comments, and widgets */
 }
-
+.service-image img{
+    max-width: 50%;
+}
 img.size-full, img.size-large {
 	max-width: 100%;
 	height: auto; 
@@ -1663,11 +1665,28 @@ a#scroll-up:hover {
 	width: 34.4827586%;
     margin-top: -5px;
 }
+
 .wide-978 #primary, .narrow-978 #primary {
 	width: 65.5763547%;
 }
 .wide-978 #secondary, .narrow-978 #secondary {
 	width: 30.4827586%;
+}
+
+/* =MENU PERSO
+----------------------------------------------- */
+#menu-perso{
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+#menu-perso .parent-page{
+    font-weight: bold;
+}
+#menu-perso .current_page_item a{
+    color:#666666;
+    text-decoration: none;
 }
 
 /* =LEFT SIDEBAR CONTENT LAYOUT
