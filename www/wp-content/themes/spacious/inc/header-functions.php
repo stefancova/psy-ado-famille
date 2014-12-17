@@ -84,14 +84,19 @@ function spacious_featured_image_slider() {
 					$spacious_slider_title = of_get_option( 'spacious_slider_title'.$i , '' );
 					$spacious_slider_text = of_get_option( 'spacious_slider_text'.$i , '' );
 					$spacious_slider_image = of_get_option( 'spacious_slider_image'.$i , '' );
+					$spacious_slider_image_small = of_get_option( 'spacious_slider_image_small'.$i , '' );
 					$spacious_slider_link = of_get_option( 'spacious_slider_link'.$i , '#' );
 					if( !empty( $spacious_header_title ) || !empty( $spacious_slider_text ) || !empty( $spacious_slider_image ) ) {
 						if ( $i == 1 ) { $classes = "slides displayblock"; } else { $classes = "slides displaynone"; }
 						?>
 						<div class="<?php echo $classes; ?>">
-							<figure>
-								<img alt="<?php echo esc_attr( $spacious_slider_title ); ?>" src="<?php echo esc_url( $spacious_slider_image ); ?>">
-							</figure>
+
+							<picture data-alt="<?php echo esc_attr( $spacious_slider_title ); ?>" data-default-src="<?php echo esc_url( $spacious_slider_image ); ?>">
+								<source media="(min-width: 700px)"  srcset="<?php echo esc_url( $spacious_slider_image ); ?>"/>
+								<source srcset="<?php echo esc_url( $spacious_slider_image_small ); ?>"/>
+								<img src="" srcset="" alt="<?php echo esc_attr( $spacious_slider_title ); ?>"/>
+							</picture>
+
 							<div class="entry-container">
 								<?php if( !empty( $spacious_slider_title ) || !empty( $spacious_slider_text ) ) { ?>
 								<div class="entry-description-container">

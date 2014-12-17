@@ -802,6 +802,7 @@ li.default-menu {
 }
 #featured-slider img {
 	margin-bottom: 0px;
+    width: 100%;
 }
 #featured-slider .slider-title-head {
 	display: inline-block;

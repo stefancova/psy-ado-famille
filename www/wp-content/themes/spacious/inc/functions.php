@@ -38,7 +38,7 @@ function spacious_scripts_styles_method() {
 	 */
 	wp_register_script( 'jquery_cycle', SPACIOUS_JS_URL . '/jquery.cycle.all.min.js', array( 'jquery' ), '2.9999.5', true );
 
-   wp_register_style( 'google_fonts', '//fonts.googleapis.com/css?family=Lato' ); 
+    wp_register_style( 'google_fonts', '//fonts.googleapis.com/css?family=Lato' );
 	
 	/**
 	 * Enqueue Slider setup js file.	 
@@ -46,6 +46,7 @@ function spacious_scripts_styles_method() {
 	if ( is_home() || is_front_page() && of_get_option( 'spacious_activate_slider', '0' ) == '1' ) {
 		wp_enqueue_script( 'spacious_slider', SPACIOUS_JS_URL . '/spacious-slider-setting.js', array( 'jquery_cycle' ), false, true );
 	}
+	wp_enqueue_script( 'picture-polyfill', SPACIOUS_JS_URL . '/picturePolyfill.js', array( 'jquery'), false, true );
 	wp_enqueue_script( 'spacious-navigation', SPACIOUS_JS_URL . '/navigation.js', array( 'jquery' ), false, true );
 	wp_enqueue_script( 'spacious-custom', SPACIOUS_JS_URL. '/spacious-custom.js', array( 'jquery' ) );
 

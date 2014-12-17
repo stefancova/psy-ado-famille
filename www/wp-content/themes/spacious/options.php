@@ -247,6 +247,13 @@ function optionsframework_options() {
 			'id' 		=> 'spacious_slider_image'.$i,
 			'type' 	=> 'upload'
 		);
+		// Stef : add a small image for responsive image in slider
+		$options[] = array(
+			'name' 	=>	sprintf( __( 'Image Upload #%1$s', 'spacious' ), $i ),
+			'desc' 	=> __( 'Upload slider image for small device.', 'spacious' ),
+			'id' 		=> 'spacious_slider_image_small'.$i,
+			'type' 	=> 'upload'
+		);
 		$options[] = array(
 			'desc' 	=> __( 'Enter title for your slider.', 'spacious' ),
 			'id' 		=> 'spacious_slider_title'.$i,
