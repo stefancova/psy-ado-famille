@@ -254,7 +254,7 @@ function spacious_widgets_init() {
 	 			else: $output .= $before_title.'<a href="' . get_permalink() . '" title="'.$page_name.'">'. $page_name .'</a>'.$after_title;
 	 			endif;
 		 	}
-			$output .= '<p>'.get_the_excerpt().'...'.'</p>'; 
+			$output .= '<p>'.get_the_excerpt().'...'.'</p>';
 			$output .= '<a class="read-more" href="'. get_permalink() .'">'.__( 'Read more', 'spacious' ).'</a>';
 	 		$output .= $after_widget;
 	 		endwhile;
@@ -352,7 +352,8 @@ class spacious_service_widget extends WP_Widget {
 					}
 					?>
 					<?php echo $before_title; ?><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php echo $page_title; ?></a><?php echo $after_title; ?>
-					<?php the_excerpt(); ?>
+					<?php #echo '<p class="excerpt">'.get_the_excerpt().'...'.'</p>'; ?>
+					<?php echo '<p class="extrait">'.get_post_meta($post->ID, 'extrait_home', true).'</p>'; ?>
 					<div class="more-link-wrap">
 						<a class="more-link" title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php _e( 'Read more','spacious' ); ?></a>	
 					</div>					
